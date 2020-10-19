@@ -5,8 +5,10 @@ pipeline {
         stage('Build Docker Image ') {
             steps {
                 sh '''
-                docker build -t "splunk" .
-                docker images
+                ls -al
+                docker --version
+                // docker build -t "splunk" .
+                // docker images
                 '''
             }
         }
