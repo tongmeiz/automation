@@ -6,9 +6,11 @@ pipeline {
             steps {
                 sh '''
                 ls   -l
+                podman --version
                 docker --version
                 // docker build -t "splunk" .
-                // docker images
+                podman images
+                docker images
                 '''
             }
         }
