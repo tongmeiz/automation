@@ -1,1 +1,1 @@
-FROM docker.io/splunk/splunk:latest
+FROM splunk/splunk:latest
